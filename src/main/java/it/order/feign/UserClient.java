@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import it.order.model.User;
 
-@FeignClient(name = "user-service")
+@FeignClient(name = "user-service") //user-service deve essere il nome dell'application.properties del servizio da chiamare registrato su Eureka
 public interface UserClient {
 
     @GetMapping("/users/{id}")
