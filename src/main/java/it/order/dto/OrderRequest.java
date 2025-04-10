@@ -1,10 +1,8 @@
 package it.order.dto;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 public class OrderRequest {
     private String productName;
     private Double price;
